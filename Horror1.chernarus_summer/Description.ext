@@ -1,3 +1,13 @@
+author = "Raiden & Trapped";
+onLoadName = "Horror Mission";
+onLoadMission = "Are you not scared?";
+
+class Header{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 10;
+};
+
 class CfgMusic
 {
 sounds[] = {01,02};
