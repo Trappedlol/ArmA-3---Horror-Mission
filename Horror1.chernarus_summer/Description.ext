@@ -1,33 +1,28 @@
-author = "Trapped & Raiden";
+author = "Raiden & Trapped";
 onLoadName = "Horror Mission";
 onLoadMission = "Are you not scared?";
-enableSaving = [true, true];
-respawnDialog = true;
-loadScreen = "";
 
-respawn = BASE;
-respawnDelay = 3;
-respawnOnStart = 1;
-
-class Header
-{
-gameType = COOP;
-minPlayers = 1;
-maxPlayers = 10;
+class Header{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 10;
 };
 
-disabledAI = 1;
+class CfgMusic
+{
+sounds[] = {01,02};
+class 01
+{
+	name = "01";
+	sound[] = {"music\sound1.ogg", db+10, 1.0};
+	titles[] = {0,""};
+};
+class 02
+{
+	name = "02";
+	sound[] = {"music\sound2.ogg", db+10, 1.0};
+	titles[] = {0,""};
+};
 
-enableDebugConsole = 1;
 
-corpseManagerMode = 1;
-corpseLimit = 1;
-corpseRemovalMinTime = 5;
-corpseRemovalMaxTime = 10;
-
-wreckManagerMode = 1;
-wreckLimit = 1;
-wreckRemovalMinTime = 5;
-wreckRemovalMaxTime = 10;
-
-respawnTemplatesWest[] = {"MenuPosition"};
+};
