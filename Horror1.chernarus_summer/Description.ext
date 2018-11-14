@@ -1,0 +1,18 @@
+class CfgMusic
+{
+sounds[] = {01,02};
+class 01
+{
+	name = "01";
+	sound[] = {"music\sound1.ogg", db+10, 1.0};
+	titles[] = {0,""};
+};
+class 02
+{
+	name = "02";
+	sound[] = {"music\sound2.ogg", db+10, 1.0};
+	titles[] = {0,""};
+};
+
+
+};
